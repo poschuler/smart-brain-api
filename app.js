@@ -11,11 +11,11 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host: 'suleiman.db.elephantsql.com',
+    host: process.env.DB_HOST,
     port: 5432,
-    user: 'hgbqqrlt',
-    password: 'PFFF_z8JvNACBpaEF-wtgWMC5Twu5--e',
-    database: 'hgbqqrlt',
+    user: process.env.DB_USER,
+    password: DB_PASSWORD,
+    database: DB_NAME,
   },
 });
 

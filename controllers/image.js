@@ -1,7 +1,7 @@
 const { ClarifaiStub, grpc } = require('clarifai-nodejs-grpc');
 
-const PAT = 'd6471b1f9e6d487cbbb933e280401815';
-const USER_ID = 'poschuler';
+const PAT = process.env.PAT;
+const USER_ID = process.env.USER_ID;
 const APP_ID = 'my-first-application';
 const MODEL_ID = 'face-detection';
 const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105';
